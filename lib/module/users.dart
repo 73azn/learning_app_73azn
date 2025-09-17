@@ -25,4 +25,6 @@ class Users {
 
     users[email] = map;
   }
+
+  void operator [](String other) {}
 }

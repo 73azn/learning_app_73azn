@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app_73azn/module/current_user.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -9,6 +10,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("home screen")));
+    return Scaffold(
+      appBar: AppBar(title: Stack(children: [Text("hello")])),
+    );
   }
 }
