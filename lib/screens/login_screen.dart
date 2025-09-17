@@ -61,7 +61,7 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () {},
                       child: Text("Forget Passwrod?"),
                     ),
-                    TextButton(
+                    ElevatedButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
                           User.name = _usersDB.users[email.text]!["name"];

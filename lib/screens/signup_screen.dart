@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app_73azn/module/current_user.dart';
 import 'package:learning_app_73azn/module/users.dart';
+import 'package:learning_app_73azn/screens/home_screen.dart';
 import 'package:learning_app_73azn/screens/login_screen.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -60,9 +62,24 @@ class SignupScreen extends StatelessWidget {
                         }
                       },
                     ),
-                    TextButton(
+                    ElevatedButton(
                       onPressed: () {
-                        _formKey.currentState?.validate();
+                        if (_formKey.currentState!.validate()) {
+                          User.name = name.text;
+                          User.email = email.text;
+                          _usersDB.addUser(
+                            email.text,
+                            password.text,
+                            name.text,
+                            name.text,
+                          );
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => HomeScreen(),
+                            ),
+                          );
+                        }
                       },
                       child: Text("Sign up"),
                     ),
