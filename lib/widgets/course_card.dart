@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CourseCard extends StatelessWidget {
-  final String imageUrl;
+  final String imagePath;
   final String duration;
   final String title;
   final String description;
@@ -9,7 +9,7 @@ class CourseCard extends StatelessWidget {
 
   const CourseCard({
     super.key,
-    required this.imageUrl,
+    required this.imagePath,
     required this.duration,
     required this.title,
     required this.description,

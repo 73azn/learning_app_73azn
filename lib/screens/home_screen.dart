@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_app_73azn/module/current_user.dart';
+import 'package:learning_app_73azn/widgets/course_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -66,6 +67,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: WidgetStatePropertyAll(Colors.blueAccent),
                 ),
               ],
+            ),
+            CourseCard(
+              imageUrl: imageUrl,
+              duration: duration,
+              title: title,
+              description: description,
+              price: price,
             ),
           ],
         ),
