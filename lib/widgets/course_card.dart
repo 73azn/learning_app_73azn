@@ -43,7 +43,7 @@ class CourseCard extends StatelessWidget {
             Stack(
               children: [
                 Image.asset(
-                  imageUrl,
+                  imagePath,
                   fit: BoxFit.cover,
                   width: double.infinity,
                   height: 180,
