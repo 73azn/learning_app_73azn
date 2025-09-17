@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app_73azn/screens/login_screen.dart';
 
 class MyPageView extends StatefulWidget {
   const MyPageView({super.key});
@@ -72,7 +73,10 @@ class _MyPageViewState extends State<MyPageView> {
             ElevatedButton(
               onPressed: () {
                 if (_cur == 3) {
-                  //nav to sign in
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                  );
                 }
                 if (_cur < 2) {
                   _bt = "next";
