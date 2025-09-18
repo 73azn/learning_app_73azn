@@ -1,52 +1,71 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KwHy0pta)
-Learning App UI 🎓📱
+# 📚 Learning App UI 🎓📱
 
-![Learning App UI](https://paper-attachments.dropboxusercontent.com/s_62BB2B23D27D54A80FECEB645D7E1F0840AC4317DED742D3B22D613CB0230849_1739186214247_Screenshot+1446-08-11+at+2.11.00PM.png)
-
----
-
-## 📘 Introduction
-
-In this project, you will design and develop a **Learning App UI** using Flutter.  
-This app will allow users to explore online courses, sign up, and view course details.  
-The main focus is on creating an engaging, well-structured user interface with multiple screens.
+A Flutter-based **Learning App UI** that allows users to sign up, log in, and explore available courses.  
+The focus of this project is to design a clean and engaging **user interface** for an e-learning application.
 
 ---
 
-## 📱 Core Screens to Implement
+## 📘 Features Implemented
 
-- ✅ **Splash Screen** – Displays the app logo.
-- ✅ **Onboarding Screens** – Three intro screens guiding users about the app.
-- ✅ **Login & Sign-Up Screens** – Allow users to register and log in.
-- ✅ **Home Screen** – Displays user info, course categories, and available courses.
-- ✅ **Course Details Screen** – Shows course description, price, and an "Add to Cart" button.
+- ✅ **Splash Screen** – Displays the app logo when starting the app.  
+- ✅ **Login & Sign-Up Screens** – Users can register or log in to the app.  
+- ✅ **Home Screen** – Shows basic user information and available courses.  
 
----
-
-## 🎨 Figma UI
-
-You can use the following Figma design as a reference:
-
-- [Course EdTech Mobile App (Figma Link)](https://www.figma.com/design/xlEI4XXk7ZRzTRxfLc46fE/Course-EdTech-Mobile-App-(Community)?node-id=0-1&p=f&t=FgLZdcCvSivg3qjR-0)
+⚠️ **Note**: The **Course Details Screen** is not yet implemented.
 
 ---
 
-## 💻 GitHub Submission Guidelines
+## 📂 Project Structure
 
-Your `README.md` file should include:
+```
+lib/
+┣ module/
+┃ ┣ current_user.dart
+┃ ┗ users.dart
+┣ screens/
+┃ ┣ home_screen.dart
+┃ ┣ login_screen.dart
+┃ ┣ signup_screen.dart
+┃ ┗ splash_screen.dart
+┣ widgets/
+┃ ┗ course_card.dart
+┗ main.dart
+```
 
-- 📌 Project description  
-- ⚙️ Setup instructions  
-- 📸 Screenshots of your app  
+- **assets/img/** → Stores images and icons used in the app.  
+- **lib/screens/** → Contains all main app screens.  
+- **lib/widgets/** → Reusable UI components (e.g., course cards).  
+- **lib/module/** → User-related data and models.  
 
 ---
 
-## ⏰ Deadline
+## 🎨 UI Reference
 
-Your project must be submitted by **18-9**, before **10:00 AM**.
+This project is inspired by the following Figma design:  
+👉 [Course EdTech Mobile App (Figma)](https://www.figma.com/design/xlEI4XXk7ZRzTRxfLc46fE/Course-EdTech-Mobile-App-(Community)?node-id=0-1&p=f&t=FgLZdcCvSivg3qjR-0)
 
 ---
 
-## ✨ Reminder
+## ⚙️ Setup Instructions
 
-> _"Learning never stops! Build great UI, and let your app inspire others."_ 🚀
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Camp-management/learning-app-73azn.git
+
+   cd learning_app_73azn
+
+   flutter run
+
+## 📸 Screenshots and videos
+
+### splash screen
+![splash](assets/gif/splash.gif)
+
+### page view screen
+![sweeper](assets/gif/sweeper.gif)
+
+### login screen
+![login](assets/gif/login.gif)
+
+### sign up screen
+![signup](assets/gif/signup.gif)
